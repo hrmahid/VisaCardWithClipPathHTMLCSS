@@ -1,0 +1,117 @@
+<html>
+<head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		font-family: 'Maven Pro', sans-serif;
+	}
+	.main_div{
+		width:100vw;
+		height:100vh;
+		display:grid;
+		place-items:center;
+	}
+	.card{
+		height:200px;
+		width:300px;
+		background:linear-gradient(to right top, #52b6fe, #6154fe);
+		border-radius:16px;
+		padding:30px;
+		position:relative;
+	}
+	.card::before{
+		content:'';
+		position:absolute;
+		height:100%;
+		width:100%;
+		background:red;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		border-radius:16px;
+		background: linear-gradient(90deg, rgba(1, 4, 64, 1) 4%, rgba(20, 1, 130, 1) 24%, rgba(39, 5, 185, 0.9535962877030162) 51%, rgba(0, 104, 255, 1) 75%, rgba(5, 145, 184, 1) 93%);
+		clip-path: polygon(28% 0, 100% 0, 100% 100%, 72% 53%, 40% 31%);
+		z-index:1;
+		opacity:.4;
+	}
+	.card::after{
+		content:'';
+		position:absolute;
+		height:100%;
+		width:100%;
+		background:red;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		border-radius:16px;
+		background: url(unnamed.png);
+		background-size: cover;
+		opacity:.4;
+		clip-path: polygon(28% 0, 100% 0, 100% 100%, 72% 53%, 40% 31%);
+
+		z-index:1;
+	}
+	.card .card_top{
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		align-item:center;
+		color:#fff;
+		z-index:2;
+	}
+	.card .card_top h2{
+		font-size:14px;
+		font-weight: 300;
+		letter-spacing:2px;
+		z-index:2;
+	}
+	.card .card_top h1{
+		font-size:30px;
+		text-align:right;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		z-index:2;
+	}
+	.card .card_bottom{
+		position:absolute;
+		bottom:20px;
+		z-index:2;
+		
+		
+	}
+	.card .card_bottom h2{
+		font-size:15px;
+		font-weight:300;
+		color:#dfe6e9;
+		margin-bottom:5px;
+		letter-spacing:1px;
+		text-transform:capitalize;
+		z-index:2;
+	}
+	.card .card_bottom p{
+		color:#fff;
+		z-index:2;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="main_div">
+		<div class="card">
+			<div class="card_top">
+				<h2>Credit</h2>
+				<h1>Visa</h1>
+			</div>
+			<div class="card_bottom">
+				<h2>HRM</h2>
+				<p>0123-5648-8874-5597</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
